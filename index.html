@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Which Free AI Tool Will Boost My Grades in 2025? Quiz</title>
+  <meta name="description" content="Take this fun and free quiz to discover which AI study tool will boost your grades in 2025 — ChatGPT, Perplexity, Claude, or Notion AI.">
+
+  <!-- Open Graph for social sharing -->
+  <meta property="og:title" content="Which Free AI Tool Will Boost My Grades in 2025? Quiz">
+  <meta property="og:description" content="Take this fun quiz to find your perfect free AI study buddy in 2025!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourdomain.com/">
+  <meta property="og:image" content="https://yourdomain.com/preview.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Which Free AI Tool Will Boost My Grades in 2025? Quiz">
+  <meta name="twitter:description" content="Find out which free AI tool will help you study smarter in 2025.">
+  <meta name="twitter:image" content="https://yourdomain.com/preview.jpg">
+
+  <!-- FAQ Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Can free AI tools really improve grades?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Free AI tools can boost grades by helping students brainstorm essays, understand difficult subjects, create summaries, and manage their study schedules more effectively."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which subjects benefit most from AI study tools?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AI tools are especially helpful for writing-heavy subjects like English, research projects in history, summarizing readings in social sciences, solving math and science problems, and organizing tasks across all subjects."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can AI actually help with study?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes! AI can make studying more efficient by generating study notes, simplifying tough concepts, organizing schedules, and even brainstorming essay ideas."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fdf6f0;
+      color: #3d2c2e;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: linear-gradient(135deg, #fbbf77, #f79489);
+      color: #fff;
+      text-align: center;
+      padding: 3rem 1rem 2rem 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-bottom-left-radius: 24px;
+      border-bottom-right-radius: 24px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.15rem;
+      opacity: 0.9;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    }
+
+    .question {
+      margin-bottom: 2rem;
+      padding: 1.25rem;
+      border: 1px solid #f3e0dc;
+      border-radius: 14px;
+      background: #fffaf7;
+    }
+
+    .question h3 {
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+      color: #5c3d3d;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      cursor: pointer;
+    }
+
+    input[type="radio"] {
+      margin-right: 0.5rem;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1.5rem;
+    }
+
+    button {
+      background: #f79489;
+      color: #fff;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: background 0.3s, transform 0.2s;
+      flex: 1;
+      min-width: 120px;
+    }
+
+    button:hover {
+      background: #f36a60;
+      transform: translateY(-2px);
+    }
+
+    #result {
+      margin-top: 2rem;
+      padding: 1.5rem;
+      border-radius: 14px;
+      background: #fff7ed;
+      border-left: 6px solid #f59e0b;
+      font-size: 1.1rem;
+    }
+
+    .info-box {
+      display: none;
+      margin-top: 1.5rem;
+      padding: 1rem;
+      background: #fef3c7;
+      border-left: 6px solid #fbbf24;
+      border-radius: 10px;
+      font-size: 0.95rem;
+    }
+
+    .progress {
+      margin-bottom: 1.5rem;
+      background: #f3e0dc;
+      border-radius: 8px;
+      overflow: hidden;
+      height: 12px;
+    }
+
+    .progress-bar {
+      height: 12px;
+      width: 0;
+      background: linear-gradient(135deg, #fbbf77, #f79489);
+      transition: width 0.4s ease;
+    }
+
+    #faq {
+      margin-top: 3rem;
+      padding: 2rem;
+      background: #fffaf7;
+      border-radius: 16px;
+      border: 1px solid #f3e0dc;
+    }
+
+    #faq h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      color: #5c3d3d;
+    }
+
+    .faq-item {
+      margin-bottom: 1.5rem;
+    }
+
+    .faq-item h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      color: #7a4e4e;
+    }
+
+    /* Cookie banner */
+    #cookie-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: #3d2c2e;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+      z-index: 1000;
+      display: none;
+    }
+
+    #cookie-banner button {
+      margin-left: 1rem;
+      background: #fbbf77;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    #cookie-banner button:hover {
+      background: #f59e0b;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+      main {
+        padding: 1.25rem;
+        margin: 1rem;
+      }
+      .question h3 {
+        font-size: 1rem;
+      }
+      button {
+        flex: 100%;
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Which Free AI Tool Will Boost My Grades in 2025?</h1>
+    <p>Take this quiz to discover your perfect AI study buddy!</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="progress"><div class="progress-bar" id="progressBar"></div></div>
+    <div id="quiz"></div>
+    <div class="buttons">
+      <button id="submit">Get My Result</button>
+      <button id="reset">Reset Quiz</button>
+      <button id="info">How Is This Calculated?</button>
+    </div>
+    <div id="result" style="display: none;"></div>
+    <div id="infoBox" class="info-box">
+      <h2>How results are calculated</h2>
+      <p>Each answer you choose corresponds to a category (A, B, C, or D). At the end, the option(s) you selected most often determine your result. If there’s a tie, all tied categories are recommended, with an explanation of why.</p>
+    </div>
+
+    <section id="faq">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <h3>Can free AI tools really improve grades?</h3>
+        <p>Yes. Free AI tools can boost grades by helping students brainstorm essays, understand difficult subjects, create summaries, and manage their study schedules more effectively.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Which subjects benefit most from AI study tools?</h3>
+        <p>AI tools are especially helpful for writing-heavy subjects like English, research projects in history, summarizing readings in social sciences, solving math and science problems, and organizing tasks across all subjects.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Can AI actually help with study?</h3>
+        <p>Yes! AI can make studying more efficient by generating study notes, simplifying tough concepts, organizing schedules, and even brainstorming essay ideas.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Cookie Banner -->
+  <div id="cookie-banner">
+    This website uses cookies to enhance your experience and for analytics. 
+    <button id="accept-cookies">Accept</button>
+  </div>
+
+  <script>
+    // Quiz Logic
+    const quizData = [
+      { question: "What’s your biggest study struggle?", answers: { a: "Writing essays", b: "Understanding math & science", c: "Summarizing long readings", d: "Staying organized" }},
+      { question: "How do you like AI to help you?", answers: { a: "Draft and brainstorm ideas", b: "Step-by-step problem solving", c: "Quick summaries and notes", d: "Planning and task management" }},
+      { question: "What’s most important to you?", answers: { a: "Creativity", b: "Accuracy", c: "Speed", d: "Productivity" }},
+      { question: "When studying, what do you struggle with most?", answers: { a: "Coming up with original ideas", b: "Getting correct answers to problems", c: "Condensing large amounts of info", d: "Keeping track of tasks" }},
+      { question: "Which study tool sounds most appealing?", answers: { a: "An AI that helps brainstorm essays", b: "An AI that solves equations step-by-step", c: "An AI that summarizes books", d: "An AI that creates study schedules" }},
+      { question: "What frustrates you most in school?", answers: { a: "Writer’s block", b: "Confusing problem sets", c: "Endless readings", d: "Too many deadlines" }},
+      { question: "Which type of help do you value most?", answers: { a: "Creative suggestions", b: "Accurate explanations", c: "Simplified summaries", d: "Organized planning" }},
+      { question: "How do you usually prepare for exams?", answers: { a: "Writing practice essays", b: "Doing problem sets", c: "Reviewing notes and summaries", d: "Creating study plans" }}
+    ];
+
+    const resultsMap = {
+      a: "ChatGPT Free — Perfect for essays and brainstorming!",
+      b: "Perplexity AI — Great for accurate answers and research help!",
+      c: "Claude AI — Awesome for summarizing and simplifying texts!",
+      d: "Notion AI (Free tier) — Best for staying organized and productive!"
+    };
+
+    const quizContainer = document.getElementById("quiz");
+    const resultContainer = document.getElementById("result");
+    const submitButton = document.getElementById("submit");
+    const resetButton = document.getElementById("reset");
+    const infoButton = document.getElementById("info");
+    const infoBox = document.getElementById("infoBox");
+    const progressBar = document.getElementById("progressBar");
+
+    function shuffleArray(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+      return array;
+    }
+
+    function buildQuiz() {
+      const output = [];
+      quizData.forEach((q, index) => {
+        let answers = [];
+        for (let letter in q.answers) {
+          answers.push(
+            `<label>
+              <input type="radio" name="question${index}" value="${letter}"> ${q.answers[letter]}
+            </label>`
+          );
+        }
+        answers = shuffleArray(answers);
+        output.push(
+          `<div class="question">
+            <h3>${q.question}</h3>
+            ${answers.join("")}
+          </div>`
+        );
+      });
+      quizContainer.innerHTML = output.join("");
+      updateProgress();
+    }
+
+    function showResults() {
+      const answers = quizContainer.querySelectorAll("input[type=radio]:checked");
+      if (answers.length < quizData.length) {
+        resultContainer.style.display = "block";
+        resultContainer.textContent = "Please answer all questions!";
+        return;
+      }
+      let counts = { a: 0, b: 0, c: 0, d: 0 };
+      answers.forEach(ans => counts[ans.value]++);
+      let maxCount = Math.max(...Object.values(counts));
+      let topCategories = Object.keys(counts).filter(key => counts[key] === maxCount);
+
+      resultContainer.style.display = "block";
+      if (topCategories.length === 1) {
+        resultContainer.textContent = resultsMap[topCategories[0]];
+      } else {
+        let multipleResults = topCategories.map(cat => resultsMap[cat]).join(" | ");
+        resultContainer.innerHTML = `<strong>It’s a tie!</strong><br>${multipleResults}<br><em>You showed equal preference for these AI tools, so any of them could be a great fit for your study style.</em>`;
+      }
+    }
+
+    function resetQuiz() {
+      buildQuiz();
+      resultContainer.style.display = "none";
+      infoBox.style.display = "none";
+    }
+
+    function toggleInfo() {
+      infoBox.style.display = infoBox.style.display === "block" ? "none" : "block";
+    }
+
+    function updateProgress() {
+      const total = quizData.length;
+      const answered = quizContainer.querySelectorAll("input[type=radio]:checked").length;
+      const percent = (answered / total) * 100;
+      progressBar.style.width = percent + "%";
+    }
+
+    quizContainer.addEventListener("change", updateProgress);
+    buildQuiz();
+    submitButton.addEventListener("click", showResults);
+    resetButton.addEventListener("click", resetQuiz);
+    infoButton.addEventListener("click", toggleInfo);
+
+    // Cookie Banner
+    const cookieBanner = document.getElementById("cookie-banner");
+    const acceptBtn = document.getElementById("accept-cookies");
+    if (!localStorage.getItem("cookiesAccepted")) {
+      cookieBanner.style.display = "block";
+    }
+    acceptBtn.addEventListener("click", () => {
+      localStorage.setItem("cookiesAccepted", "true");
+      cookieBanner.style.display = "none";
+    });
+  </script>
+</body>
+</html>

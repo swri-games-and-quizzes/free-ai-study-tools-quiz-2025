@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://swri-games-and-quizzes.github.io/free-ai-study-tools-quiz-2025/sitemap.xml
